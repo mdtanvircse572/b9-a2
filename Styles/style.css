@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap")
+  /* shared styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Mulish;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+:root{
+    --color-1:#131318;
+    --color-2:#FF5400;
+    --color-3:#FFF;
+}
+/*.................
+   Header section
+.................*/
+/* style for nav */
+.pre-nav {
+  display: none;
+}
+
+.nav {
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 90%;
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .left-nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+.nav .left-nav .img{
+    width: 50px;
+}
+.nav .left-nav .text{
+    display: flex;
+    gap: 8%;
+}
+.nav .left-nav .text .first{
+    color:var(--color-1);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.nav .left-nav .text .last{
+    color: var(--color-2);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.menu{
+    /* border: 10px solid red; */
+    display: none;
+}
+.nav .right-nav ul{
+    display: flex;
+    gap: 2.75rem;
+}
+.nav .right-nav li{
+    list-style: none;
+}
+.nav .right-nav a{
+    text-decoration: none;
+    color: var(--color-1);
+}
+.nav .right-nav a:hover{
+    color:var(--color-2) ;
+}
+/* style for banner */
+.banner{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 5%;
+}
+.banner .container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+.banner .container .title h1{
+    color: var(--color-3);
+    font-size: 4rem;
+}
