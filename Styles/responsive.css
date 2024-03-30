@@ -31,11 +31,22 @@
     .container {
         width: 335px;
     }
-    .find-now {
+    .input-items {
         width: 287px;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         margin-top: 30px;
     }
+    /* .input {
+        width: 100%;
+    }
+    .selector {
+        width: 100%;
+    }
+    .btn-primary {
+        width: 100%; */
+    
     .banner-container h1 {
         font-size: 1.75rem;
         padding-top: 20px;
@@ -48,12 +59,12 @@
 }
 /* tablet responsive */
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .find-now{
-        width: 660px;
-        display: block;
-    }
-    .find-now input:last-child{
-        margin-top: 20px;
+    .input-items {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
     }
 }
 
