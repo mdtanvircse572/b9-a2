@@ -86,6 +86,9 @@ nav ul li a {
     color: #424247;
     font-size: 1.25rem;
 }
+nav ul li a :hover{
+    color: #FF5400;
+}
 
 /* banner  */
 .banner {
@@ -100,6 +103,8 @@ nav ul li a {
 .banner-container {
     text-align: center;
     color: #fff;
+    justify-content: center;
+    align-items: center;
 }
 .banner-container h1 {
     font-size: 4rem;
@@ -115,35 +120,49 @@ nav ul li a {
     line-height: 26px;
     font-weight: 400;
 }
-.find-now {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 800px;
-    margin: auto;
-    padding: 22px 18px;
-    grid-gap: 15px;
+.input-items {
+    display: inline-flex;
+    align-items: flex-start;
     background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    gap: 24px;
     border-radius: 8px;
     margin-top: 50px;
 }
-.find-now input {
-    padding: 15px;
-    border: none;
+
+.input {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    background-color: #FFF;
     border-radius: 8px;
 }
-.find-now input:last-child {
-    cursor: pointer;
-    background-color: #FF5400;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: .3s;
-}
-.find-now input:last-child:hover {
-    background-color: #fff;
-    color: #FF5400;
+
+.selector {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
 }
 
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    background-color: #FF5400;
+    color: white;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fa-solid {
+    color: #FFF;
+}
 /* Popular section */
 .popular-section-container {
     display: flex;
